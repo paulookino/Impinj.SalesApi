@@ -9,7 +9,6 @@ namespace Impinj.Services
     {
         private readonly string _csvPath = Path.Combine("Input", "SalesRecords.csv");
 
-        // 👇 altere aqui
         protected virtual IEnumerable<SalesRecord> LoadRecords()
         {
             using var reader = new StreamReader(_csvPath);
